@@ -14,12 +14,13 @@
         <div class="container">
             <nav>
                 <!-- <img src="images/logo.png" alt="" class="logo"> -->
-                 <h1 style="font-size: 50px;"><span style="color: #ff004f;">A</span>nkit.</h1>
+                <h1 style="font-size: 50px;"><span style="color: #ff004f;">A</span>nkit.</h1>
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
@@ -142,6 +143,78 @@
             <a href="#" class="btn">See more</a>
         </div>
     </div>
+    <!-- projects -->
+
+    <div id="projects">
+        <div class="container">
+            <div class="sub-title">My Projects</div>
+            <div class="my-work-list">
+                <div class="my-work">
+                    <img src="images/my-work/image1.png" alt="">
+                    <div class="layer">
+                        <h3>Gallery</h3>
+                        <a href="https://ank-25.github.io/weather_app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="my-work">
+                    <img src="images/my-work/image2.png" alt="">
+                    <div class="layer">
+                        <h3>Spotify-clone</h3>
+                        <a href="https://ank-25.github.io/Spotify-clone/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="my-work">
+                    <img src="images/my-work/image3.png" alt="">
+                    <div class="layer">
+                        <h3>Beauty-of-nature</h3>
+                        <a href="https://ank-25.github.io/Beauty-of-nature/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="my-work">
+                    <img src="images/my-work/image4.png" alt="">
+                    <div class="layer">
+                        <h3>Cold-brew</h3>
+                        <a href="https://ank-25.github.io/Cold-brew/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="my-work">
+                    <img src="images/my-work/image5.png" alt="">
+                    <div class="layer">
+                        <h3>Simon-Says-Game</h3>
+                        <a href="https://ank-25.github.io/Simon-Says-Game/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="my-work">
+                    <img src="images/my-work/image6.png" alt="">
+                    <div class="layer">
+                        <h3>Snakes-and-ladders</h3>
+                        <a href="https://ank-25.github.io/snakes-and-ladders/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="my-work">
+                    <img src="images/my-work/image7.png" alt="">
+                    <div class="layer">
+                        <h3>Tic-Tac-Toe</h3>
+                        <a href="https://ank-25.github.io/Tic-Tac-Toe-Game/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="my-work">
+                    <img src="images/my-work/image8.png" alt="">
+                    <div class="layer">
+                        <h3>Todo-List</h3>
+                        <a href="https://ank-25.github.io/Todo-List/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="my-work">
+                    <img src="images/my-work/image9.png" alt="">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <a href="https://ank-25.github.io/weather_app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- contact -->
 
     <div id="contact">
@@ -186,8 +259,8 @@
                 .then(response => {
                     msg.innerHTML = "Message sent successfully!";
                     setTimeout(() => {
-                        msg.innerHTML ="";
-                    },5000);
+                        msg.innerHTML = "";
+                    }, 5000);
                     form.reset();
                 })
                 .catch(error => console.error('Error!', error.message))
